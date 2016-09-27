@@ -23,6 +23,7 @@ app.listen(8080, function () {
   console.log(`IMAD course app listening on port ${port}!`);
 });
 
+var article = "Something";
 app.get('/article', function(req, res) {
-    res.send("article");
+    res.send(article);
 });
